@@ -1,0 +1,8 @@
+train: ../datasets/set2/images/train/
+val: ../datasets/set2/images/val
+test: ../datasets/set2/images/test
+
+nc: 6
+
+# Classes
+names: [billete, knife, monedero, pistol, smartphone, tarjeta]
