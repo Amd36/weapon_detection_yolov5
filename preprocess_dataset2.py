@@ -3,7 +3,7 @@ This script extracts a specific dataset from a ZIP file, creates annotations for
 It also allows for optional removal of the ZIP file after extraction.
 
 Usage:
-    python script_name.py -d <destination_path> [-r]
+    python preprocess_dataset2.py -d <destination_path> [-r]
 
 Arguments:
     -d, --destination_path  Path to the directory where the dataset should be extracted and processed.
@@ -58,7 +58,7 @@ def get_labels(dataset_path):
     """Generates a dictionary mapping directory names to integer labels."""
     try:
         # Get a list of all subdirectories (labels) in the dataset directory
-        labels = [entry.name for entry in dataset_path.iterdir() if entry.is_dir()]
+        labels = sorted([entry.name for entry in dataset_path.iterdir() if entry.is_dir()])
         label_dict = {label: i for i, label in enumerate(labels)}
         return label_dict
     except Exception as e:

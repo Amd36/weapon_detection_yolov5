@@ -1,6 +1,6 @@
-train: ../datasets/set2/images/train/
-val: ../datasets/set2/images/val
-test: ../datasets/set2/images/test
+train: ../datasets/images/train/
+val: ../datasets/images/val
+test: ../datasets/images/test
 
 nc: 6
 
