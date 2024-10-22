@@ -1,4 +1,4 @@
-weights: yolov5s.pt
+weights: yolov5n.pt
 cfg: ''
 data: /home/du/Junayed/weapon_detection_yolov5/yolov5/data/weapon_data.yaml
 hyp:
@@ -30,7 +30,7 @@ hyp:
   mosaic: 1.0
   mixup: 0.0
   copy_paste: 0.0
-epochs: 20
+epochs: 35
 batch_size: 32
 imgsz: 640
 rect: false
